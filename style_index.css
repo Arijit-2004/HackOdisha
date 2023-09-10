@@ -91,18 +91,25 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-    /* opacity:0; */
-    /* transition: .3s ease; */
+    opacity:0;
+    transition: .3s ease;
 }
-/* .slide img active{
+.slide img active{
     opacity: 1;
-} */
+}
 .slide .left-info{
     position: absolute;
     top: 0%;
     left: 0%;
     width: 50%;
     height: 100%;
+    transform: translateX(-100%);
+    transition: 0s;
+}
+.slide.active .left-info{
+    transform: translateX(0);
+    z-index: 1;
+    transition: .5s ease;
 }
 .left-info .penetrate-blur{
     position: absolute;
@@ -111,20 +118,18 @@
     background-color: rgba(225, 225, 225, .1);
     backdrop-filter: blur(20px);
     display: flex;
-    /* -webkit-mask: linear-gradient(#000 0 0), 
+    -webkit-mask: linear-gradient(#000 0 0), 
     linear-gradient(#000 0 0) ;
     -webkit-mask-clip: text, padding-box;
-    -webkit-mask-composite: xor; */
+    -webkit-mask-composite: xor;
+    padding-right:20px;
 }
 .penetrate-blur h1{
-    position: absolute;
+    /* position: absolute; */
     top: 33.9%;
     left: 20%;
     font-size: 150px;
-    font-weight: bold;
-   /* color: transparent; */
-   -webkit-mask-image: url('back.jpg');
-   mask-image: url('back.jpg')
+    text-shadow: 0 0 10px rgba(255,255,255,.8)
 }
 .left-info .content{
     position: absolute;
@@ -166,6 +171,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    transform: translateX(100%);
+    transition:0s;
+}
+.slide.active .right-info{
+    transform: translateX(0);
+    z-index:1;
+    transition:.5s ease;
 }
 .right-info h1{
     font-size: 150px;
