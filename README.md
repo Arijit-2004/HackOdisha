@@ -1,5 +1,5 @@
 # HackOdisha
-# Jungle Safari Adventure Website
+# Jungle Safari 
 
 Welcome to the Jungle Safari Adventure website project, a celebration of the untamed wilderness and the wonders of jungle safaris.
 
