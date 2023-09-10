@@ -1,33 +1,18 @@
-    const nextBtn = document.querySelector('.next-btn');
-    const prevBtn = document.querySelector('.prev-btn');
-    const slides = document.querySelectorAll('.slide');
-    const numberOfSlides = slides.length;
-    let slideNumber = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    const dropdownBtn = document.querySelector(".dropbtn");
+    const dropdownContent = document.querySelector(".dropdown-content");
 
-    // //slider previous button
-    // prevBtn.onClick = () => {
-    //     slides.forEach((slide) =>{
-    //         slide.classList.remove('active')
-    //     })
+    // Show/hide dropdown content when the button is clicked
+    dropdownBtn.addEventListener("click", function() {
+        dropdownContent.classList.toggle("show");
+    });
 
-    //     slideNumber--;
-
-    //     if(slideNumber<0)
-    //     slideNumber = numberOfSlides-1;
-    // slides[slideNumber].classList.add('active');
-    // }
-
-    //slider next button
-    nextBtn.onClick = () => {
-        // slides.forEach((slide) =>{
-        //     slide.classList.remove('active')
-        // });
-
-        slideNumber++;
-
-        // if(slideNumber > (numberOfSlides - 1)){
-        //     slideNumber = 0;
-        // }
-
-    // slides[slideNumber].classList.add('active');
-    }
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener("click", function(event) {
+        if (!event.target.matches(".dropbtn")) {
+            if (dropdownContent.classList.contains("show")) {
+                dropdownContent.classList.remove("show");
+            }
+        }
+    });
+});
