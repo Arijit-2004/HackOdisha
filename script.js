@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const dropdownBtn = document.querySelector(".dropbtn");
+    const dropdownBtn = document.querySelector(".btn");
     const dropdownContent = document.querySelector(".dropdown-content");
 
     // Show/hide dropdown content when the button is clicked
