@@ -128,7 +128,7 @@
 .penetrate-blur h1{
     /* position: absolute; */
     padding-top: 38%;
-    padding-left: 60%;
+    padding-left: 10%;
     align-text: right;
     font-size: 150px;
     text-shadow: 0 0 10px rgba(255,255,255,.8)
@@ -185,6 +185,8 @@
     font-size: 150px;
     color: aliceblue;
     text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    padding-top: 10%;
+    padding-left: 110%;
 }
 .right-info h3{
     font-size: 60px;
