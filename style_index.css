@@ -127,8 +127,8 @@
 }
 .penetrate-blur h1{
     /* position: absolute; */
-    padding-top: 38%;
-    padding-left: 10%;
+    padding-top: 35%;
+    padding-left: 15%;
     align-text: right;
     font-size: 150px;
     text-shadow: 0 0 10px rgba(255,255,255,.8)
@@ -185,8 +185,7 @@
     font-size: 150px;
     color: aliceblue;
     text-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    padding-top: 10%;
-    padding-left: 110%;
+    padding-left: 105%;
 }
 .right-info h3{
     font-size: 60px;
@@ -204,11 +203,13 @@
 
 /* Style the dropdown button */
 .dropbtn {
-    background-color: #3498db;
+    background-color: #0b87da;
     color: white;
     padding: 10px 20px;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 /* Style the dropdown content (hidden by default) */
