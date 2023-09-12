@@ -129,9 +129,25 @@
     /* position: absolute; */
     padding-top: 35%;
     padding-left: 15%;
-    align-text: right;
+    text-align: right;
     font-size: 150px;
     text-shadow: 0 0 10px rgba(255,255,255,.8)
+}
+.penetrate-blur h1{
+
+    animation-name: changeColor;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes changeColor
+{
+    0%{text-shadow: 0 0 10px rgba(255,255,255,.8)}
+    25%{text-shadow: 0 0 10px rgba(255, 125, 125, 0.8)}
+    50%{text-shadow: 0 0 10px rgba(112, 228, 249, 0.8)}
+    75%{text-shadow: 0 0 10px rgba(133, 253, 161, 0.8)}
+    100%{text-shadow: 0 0 10px rgba(252, 116, 85, 0.8)}
 }
 .left-info .content{
     position: absolute;
@@ -238,4 +254,69 @@
 /* Show the dropdown content when the button is clicked */
 .show {
     display: block;
+}
+
+
+.prev .next{
+    height: 50px;
+    width: 50px;
+    z-index: 100000;
+}
+#scrollBtn
+{z-index: 100000;
+    height: 20px;
+    width: 20px;
+}
+.dropbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.btn
+{
+    margin-top: -200px;
+    margin-left: 100px;
+    z-index: 100000;
+    position: absolute;
+    width: 350px;
+    cursor: pointer;
+}
+#arrows button
+{
+height: 60px;
+width: 60px;
+border-radius: 50%;
+
+}
+.leftArrow{
+    background-image: url("https://www.svgrepo.com/show/27797/right-arrow.svg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+.rightArrow{
+    background-image: url("https://www.svgrepo.com/show/27797/right-arrow.svg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+#arrows button{
+background-color: transparent;
+cursor: pointer;
+}
+#arrows{
+    z-index: 190909;
+    position: fixed;
+    bottom: 100px;
+    left: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightArrow{
+    margin-left: 25px;
+    backdrop-filter: blur(20px);
 }
