@@ -101,3 +101,10 @@ link.href = "parkPages/tadoba.html";
 
 console.log(`displaying ${place}`);
 }
+//enabling right and left arrow key control
+document.addEventListener("keydown", ()=>{
+    if (event.key === "ArrowLeft")
+    previous();
+    else if (event.key === "ArrowRight")
+    next();
+});
